@@ -1,3 +1,6 @@
+# 1 Main Code with all imports
+# Run this to install necessary imports: pip3 install langchain openai chromadb tiktoken unstructured pytesseract unstructured_inference
+# Install Tesseract OCR on system also run "brew install tesseract-lang" to get in all languages
 import os
 import sys
 
@@ -12,6 +15,13 @@ from langchain.llms import OpenAI
 from langchain.vectorstores import Chroma
 
 import constants
+
+import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('averaged_perceptron_tagger')
+
 
 os.environ["OPENAI_API_KEY"] = constants.APIKEY
 
