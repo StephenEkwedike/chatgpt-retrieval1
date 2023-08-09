@@ -1,6 +1,7 @@
 # 1 Main Code with all imports
 # Run this to install necessary imports: pip3 install langchain openai chromadb tiktoken unstructured pytesseract unstructured_inference
 # Install Tesseract OCR on system also run "brew install tesseract-lang" to get in all languages
+#
 import os
 import sys
 
